@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  <!-- vue js  -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <!-- axios  -->
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- titolo  -->
+  <title>Vue Email List</title>
+
+</head>
+
+<body>
+
+  <div id="app">
+    
+    <h1>Elenco partecipanti</h1>
+
+    <ul v-if="mails.length === max">
+      <li v-for="mail in mails">{{ mail }}</li>
+    </ul>
+
+  </div>
+
+  <script src="./js/script.js"></script> 
+
+</body>
+
+</html>
